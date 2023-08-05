@@ -58,8 +58,8 @@ const DeleteModal = ({ user, onClose, onDelete }: ModalsPropsType) => {
                     Are You Sure, you want to delete <span className='font-bold'>{user?.name}{"'s"}</span> Info?
                 </p>
                 <div className="flex justify-end gap-4 mt-8 mb-4">
-                    <button className='px-4 py-2 rounded-lg border bg-primary color-tertiary-50' onClick={onDelete}>Confirm</button>
-                    <button className='px-4 py-2 rounded-lg border bg-red-700 text-white' onClick={onClose}>Close</button>
+                    <button className='px-4 py-2 rounded-lg border bg-red-700 text-white' onClick={onDelete}>Delete</button>
+                    <button className='px-4 py-2 rounded-lg border bg-secondary-50 text-white' onClick={onClose}>Close</button>
                 </div>
             </div>
         </div>

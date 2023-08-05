@@ -188,8 +188,7 @@ const TableInfo = () => {
                       Previous
                     </button>
                     <button className='text-primary-50 px-4 py-2 rounded-lg border hover:bg-[#EDF2F7] active:bg-primary active:text-white disabled:pointer-events-none disabled:opacity-50' onClick={() => setPage(page + 1)}
-                      disabled={page === totalUsers / usersPerPage}
-                    >
+                      disabled={Math.min(skip + usersPerPage, totalUsers) === totalUsers}>
                       Next
                     </button>
                   </div>
