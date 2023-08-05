@@ -23,6 +23,7 @@ export interface UserDataType {
   }
 
   export interface ModalsPropsType {
-    user: UserDataType;
+    user: UserDataType | null;
     onClose: () => void;
+    onDelete?: () => void;
   }
