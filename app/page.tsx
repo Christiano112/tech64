@@ -43,9 +43,10 @@ const TableInfo = () => {
     if (!searchInput.trim()) return;
 
     const filteredUsers = users.filter((user) => {
-      const username = user.name.split(" ")[0];
-      return username.toLowerCase().includes(searchInput.trim().toLowerCase());
-    });
+      const fullName = user.name.toLowerCase();
+      const searchInputLower = searchInput.trim().toLowerCase();
+      return fullName.includes(searchInputLower);
+  });
 
     if (!filteredUsers || filteredUsers.length === 0) return;
 
